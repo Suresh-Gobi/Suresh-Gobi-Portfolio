@@ -1,0 +1,42 @@
+/* Inside your component's CSS file (e.g., styles.css) */
+p {
+    color: #9288F8;
+    font-size: 16px;
+  }
+  
+  img {
+    width: 200px;
+  }
+  
+  #home {
+    /* Set the section to occupy 70% of the viewport height */
+    height: 70vh;
+  
+    /* Flexbox styles to center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-container {
+    /* Add some padding to the container if needed */
+    padding: 20px;
+  }
+  
+  .fab{
+    color: #9288F8;
+  }
+
+.social-icons a {
+    color: #000; /* Change the color of the icons (replace #000 with your desired color) */
+    text-decoration: none;
+    padding-right: 20px; /* Add right padding of 20 pixels to create a gap between the icons */
+  }
+  
+  .social-icons a:last-child {
+    padding-right: 0; /* Remove the right padding from the last icon to avoid extra space */
+  }
+  
+  .social-icons a:hover {
+    color: #0077B5; /* Change the color on hover (replace #0077B5 with your desired color) */
+  }
