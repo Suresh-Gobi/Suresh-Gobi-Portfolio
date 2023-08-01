@@ -1,1 +1,37 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+	<div class="container">
+	  <a class="navbar-brand mr-5" href="#">SG</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'home'}">
+			<a class="nav-link" href="#home">Home </a>
+		  </li>
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'experience'}">
+			<a class="nav-link" href="#experience">Experience</a>
+		  </li>
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'projects'}">
+			<a class="nav-link" href="#projects">Projects</a>
+		  </li>
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'skills'}">
+			<a class="nav-link" href="#skills">Skills</a>
+		  </li>
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'education'}">
+			<a class="nav-link" href="#education">Education</a>
+		  </li>
+		  <li class="nav-item" [ngClass]="{'active-link': activeSection === 'resume'}">
+			<a class="nav-link" href="#resume">Resume</a>
+		  </li>
+		</ul>
+	  </div>
+
+	  <div class="tools">
+		<a class="" title="Click to Contact me."><mat-icon> contacts</mat-icon></a>
+		
+	  </div>
+	</div>
+  </nav>
+  
