@@ -21,10 +21,18 @@ p {
   .home-container {
     /* Add some padding to the container if needed */
     padding: 20px;
+    margin-top: 10vh;
   }
   
   .fab{
+    color: #424242;
+  }
+
+  .fab:hover{
     color: #9288F8;
+    transition: 0.3s ease-in-out;
+    transform: translate(-5%, -5%) scale(1.2);
+    z-index: 1;
   }
 
 .social-icons a {
@@ -40,3 +48,154 @@ p {
   .social-icons a:hover {
     color: #0077B5; /* Change the color on hover (replace #0077B5 with your desired color) */
   }
+  span svg {
+    margin-right: 20px;
+  }
+  .tech-stack{
+    text-align: center;
+    padding-top: 50px;
+  }
+  .dev{
+    text-align: center;
+  }
+
+  .pro-img{
+    border-radius: 100%;
+    padding: 30px;
+  }
+  .intro{
+    padding-right: 360px;
+    padding-left: 360px;
+  }
+
+  
+  .context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+    z-index: 1; /* Add this to set the z-index for the content */
+  }
+
+.area {
+  background: #ffffff;
+  background: -webkit-linear-gradient(to left, #8f94fb, #fcfcfc);
+  width: 100%;
+  height: 90vh;
+  position: relative; /* Add this to make it a stacking context */
+  z-index: 0; /* Add this to set the z-index for the animation */
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 206, 253, 0.466);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
