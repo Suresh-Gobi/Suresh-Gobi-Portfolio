@@ -1,0 +1,58 @@
+/* styles.scss or styles.css */
+.navbar{
+    padding-top: 30px;
+  }
+  
+  /* Remove default list styles and style list items */
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-brand{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Style links */
+  .navbar a {
+    text-decoration: none;
+    color: #322653;
+    font-size: 16px;
+  }
+  
+  /* Add hover effect to links */
+  .navbar a:hover {
+    color: #8062D6;
+    cursor: pointer;
+  }
+  
+  /* Center the navigation links */
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add padding between the navbar brand and the links */
+  .navbar-brand {
+    padding-right: 250px;
+  }
+  
+  /* Style for the active link in the navigation */
+  .nav-links li a {
+    color: #000; /* Change the default link color */
+    text-decoration: none;
+  }
+  
+  .nav-links li a.active {
+    color: #007bff; /* Change the color to your desired active link color */
+    font-weight: bold; /* Optionally, you can change the font-weight to make it more noticeable */
+  }
+  
+  
