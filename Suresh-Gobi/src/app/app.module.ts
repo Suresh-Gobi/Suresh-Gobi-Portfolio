@@ -11,13 +11,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/homer/homer.component';
 import { mapToResolve } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
+import { PreLoaderComponent } from './components/pre-loader/pre-loader.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    PreLoaderComponent
   ],
   imports: [
     BrowserModule,
