@@ -1,2 +1,6 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-pre-loader *ngIf="showPreloader"></app-pre-loader>
+<div class="main-content" *ngIf="!showPreloader">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
