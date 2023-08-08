@@ -13,6 +13,7 @@ import { mapToResolve } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { PreLoaderComponent } from './components/pre-loader/pre-loader.component';
+import { ContactModalComponent } from './components/contact-modal/contact-modal.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PreLoaderComponent } from './components/pre-loader/pre-loader.component
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    PreLoaderComponent
+    PreLoaderComponent,
+    ContactModalComponent
   ],
   imports: [
     BrowserModule,

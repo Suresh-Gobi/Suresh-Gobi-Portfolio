@@ -1,5 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg navbar-light"
+  class="navbar navbar-expand-lg navbar-light fixed-top"
   style="background-color: white"
 >
   <div class="container">
@@ -46,7 +46,7 @@
           class="nav-item"
           [ngClass]="{ 'active-link': activeSection === 'skills' }"
         >
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#skills">Blog</a>
         </li>
         <li
           class="nav-item"
@@ -58,9 +58,14 @@
     </div>
 
     <div class="tools">
-      <a class="" title="Click to Contact me."
+      <a class="" title="Click to Contact me." (click)="openContactModal()"
         ><mat-icon> contacts</mat-icon></a
       >
     </div>
+    <!-- Modal for Contact -->
+    <app-contact-modal
+      *ngIf="showContactModal"
+      (closeModal)="closeContactModal()"
+    ></app-contact-modal>
   </div>
 </nav>
