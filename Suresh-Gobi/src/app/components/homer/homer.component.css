@@ -222,19 +222,19 @@ span svg {
 }
 .service-img{
   width: 80px;
-  margin-left: 100px;
-  margin-bottom: 30px;
+  margin-left: 135px;
+  margin-bottom: 25px;
 }
 .card-title-service{
-  color: #ffffff;
+  color: #3b3b3b;
   text-align: center;
   font-size: 24px;
-  padding-top: 50px;
+
 }
 .card-parag{
-  color: white;
+  color: rgb(65, 65, 65);
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
   padding-top: 10px;
 }
 .card-two{
@@ -252,6 +252,10 @@ span svg {
   transform: translate(-5%, -5%) scale(1.2);
   z-index: 1;
   margin-left: 130px;
+}
+.btn-info{
+  text-align: center;
+  margin-left: 135px;
 }
 /*---------------------------------------------------------*/
 /*Services end*/
@@ -365,7 +369,9 @@ a{
   background-position: center;
   width: 350px;
 }
-
+.card-one{
+  width: 350px;
+}
 .project-tag{
   text-align: left;
 }
