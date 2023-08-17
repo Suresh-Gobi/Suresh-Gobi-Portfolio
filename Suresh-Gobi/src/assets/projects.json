@@ -1,34 +1,66 @@
 [
   {
-    "title": "Project1",
-    "description": "Description of Project 1",
-    "tags": ["Tag 1", "Tag 2"],
-    "visitLink": "https://example.com/project1",
-    "imageLink": ["url/img1","url/img2"],
-    "githubLink": "https://github.com/user/project1"
+    "title": "Portfolio - Suresh Gobi",
+    "description": "This portfolio highlighting a range of projects and skills, demonstrating expertise in coding, problem-solving, and technology-driven solutions.",
+    "tags": ["Angular", "JSON"],
+    "visitLink": "https://sureshgobi.web.app/",
+    "imageLinks": ["#", "#"],
+    "githubLink": "https://github.com/Suresh-Gobi/Suresh-Gobi-Portfolio",
+    "organization": "None"
   },
   {
-    "title": "Project 2",
-    "description": "Description of Project 2",
-    "tags": ["Tag 1", "Tag 3","Tag 2"],
-    "visitLink": "https://example.com/project2",
-    "imageLink": "https://example.com/images/project2.png",
-    "githubLink": "https://github.com/user/project2"
+    "title": "Startup-In-EU",
+    "description": "Startup-In-EU unfolds as an immersive static website, elegantly presenting a plethora of captivating content.",
+    "tags": ["HTML5", "CSS", "Javascript", "Bootstrap"],
+    "visitLink": "https://startupineu.com/",
+    "imageLinks": ["#", "#"],
+    "githubLink": "#",
+    "organization": "Elzian Agro Pvt Ltd"
   },
   {
-    "title": "Project 2",
-    "description": "Description of Project 2",
-    "tags": ["Tag 1", "Tag 3"],
-    "visitLink": "https://example.com/project2",
-    "imageLink": "https://example.com/images/project2.png",
-    "githubLink": "https://github.com/user/project2"
+    "title": "Earth Restoration",
+    "description": "ER: MERN & Angular app linking inventors-farmers. Showcasing diverse crops via my Angular work. Fosters agri-tech collaboration for sustainable solutions.",
+    "tags": ["HTML5", "CSS", "Javascript", "Angular"],
+    "visitLink": "https://er.elzian.com/",
+    "imageLinks": ["#", "#"],
+    "githubLink": "#",
+    "organization": "Elzian Agro Pvt Ltd"
+  },
+
+  {
+    "title": "Belipola Arboretum",
+    "description": "Belipola Arboretum pioneers analog forests. I built a MERN site with authentication, payments, and features, uniting tech and nature's innovation.",
+    "tags": ["MERN Stack", "CSS", "MySQL", "Bootstrap"],
+    "visitLink": "#",
+    "imageLinks": ["#", "#"],
+    "githubLink": "#",
+    "organization": "Elzian Agro Pvt Ltd"
   },
   {
-    "title": "Project 2",
-    "description": "Description of Project 2",
-    "tags": ["Tag 1", "Tag 3"],
-    "visitLink": "https://example.com/project2",
-    "imageLink": "https://example.com/images/project2.png",
-    "githubLink": "https://github.com/user/project2"
+    "title": "Notepad-ReDev",
+    "description": "Notepad-ReDev is recreation of ordinary notpad with extra features like dark theme, calculator and other tools. ",
+    "tags": [".NET core", "C#"],
+    "visitLink": "#",
+    "imageLinks": ["#", "#"],
+    "githubLink": "https://github.com/Suresh-Gobi/Notepad-ReDev",
+    "organization": "None"
+  },
+  {
+    "title": "Hospital Management System",
+    "description": "HMS: Web app revolutionizing hospital management. Streamlines operations, empowers staff, manages assets. Secure payments.",
+    "tags": ["HTML5", "CSS", "Javascript", "PHP", "Bootstrap"],
+    "visitLink": "#",
+    "imageLinks": ["#", "#"],
+    "githubLink": "https://github.com/Suresh-Gobi/Notepad-ReDev",
+    "organization": "None"
+  },
+  {
+    "title": "Ayubo Drive",
+    "description": "Meet Ayubo Drive: Revolutionizing car rentals. Future-forward, convenient, affordable. Calculate, book, and drive effortlessly. Say hello to travel ease today!",
+    "tags": [".NET Core", "C#"],
+    "visitLink": "#",
+    "imageLinks": ["#", "#"],
+    "githubLink": "https://github.com/Suresh-Gobi/Notepad-ReDev",
+    "organization": "None"
   }
 ]

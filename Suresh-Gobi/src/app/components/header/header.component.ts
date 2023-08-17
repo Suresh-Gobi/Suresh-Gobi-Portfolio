@@ -8,10 +8,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
   activeSection: string | null = null;
-
   showContactModal: boolean = false;
 
-  constructor(private modalService: NgbModal) {} // Inject the NgbModal service
+  constructor(private modalService: NgbModal) {}
 
   openContactModal() {
     this.showContactModal = true;
@@ -29,17 +28,16 @@ export class HeaderComponent implements OnInit {
   highlightActiveSection() {
     const sections = document.querySelectorAll('section'); // Change this selector to match your sections
     const scrollPosition = window.pageYOffset;
-  
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-  
+
       if (scrollPosition >= sectionTop - 50 && scrollPosition < sectionTop + sectionHeight) {
         this.activeSection = section.id;
       }
     });
   }
-  
 
   ngOnInit() {
     this.highlightActiveSection();

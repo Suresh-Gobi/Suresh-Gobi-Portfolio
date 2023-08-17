@@ -1,7 +1,9 @@
+
 <div class="area">
   <ul class="circles">
     <br />
     <section id="home">
+      
       <div class="home-container">
         <div class="container dev">
           <div class="row">
@@ -17,7 +19,7 @@
               </p>
               <div class="social-icons">
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/suresh-gobi1/"
                   target="_blank"
                   rel="noopener"
                   aria-label="LinkedIn"
@@ -25,7 +27,7 @@
                   <i class="fab fa-linkedin fa-2x"></i>
                 </a>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Suresh-Gobi/"
                   target="_blank"
                   rel="noopener"
                   aria-label="GitHub"
@@ -287,13 +289,17 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Image Slideshow</h5>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title">{{ activeProjectTitle }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeImageModal()">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
             <div id="imageSlideshow" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
-                <!-- Images will be added here dynamically -->
+                <div *ngFor="let imageUrl of activeProjectImages; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
+                  <img src="{{ imageUrl }}" class="d-block w-100" alt="Image {{ i + 1 }}">
+                </div>
               </div>
               <a class="carousel-control-prev" href="#imageSlideshow" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -314,6 +320,7 @@
         <div  class="card card-one card-img">
           <div class="card-body">
             <h5 class="card-title-pro">{{ projects.title }}</h5>
+            <span class="organization"><h6>Organization: {{ projects.organization }}</h6></span>
             <p class="card-para">
               {{ projects.description }}
             </p>
@@ -331,7 +338,7 @@
                   Visit <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
               </button>
-              <button type="button" class="btn btn-light" (click)="openImageModal()">
+              <button type="button" class="btn btn-light" (click)="openImageModal(projects)">
                 View image
               </button>
               <button type="button" class="btn btn-light">
@@ -348,6 +355,6 @@
   </div>
 </section>
 
-<section id="skills">...</section>
+<!-- <section id="skills">...</section>
 <section id="education">...</section>
-<section id="resume">...</section>
+<section id="resume">...</section> -->

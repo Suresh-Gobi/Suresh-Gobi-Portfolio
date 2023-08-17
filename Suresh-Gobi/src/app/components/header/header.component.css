@@ -2,7 +2,9 @@
 .navbar{
     padding-top: 30px;
   }
-  
+  .navbar ul li.active {
+    color: #ff0000; /* Change the color as needed */
+  }
   /* Remove default list styles and style list items */
   .navbar ul {
     list-style-type: none;
@@ -55,4 +57,34 @@
     font-weight: bold; /* Optionally, you can change the font-weight to make it more noticeable */
   }
   
+  @media (max-width: 576px) {
+    .navbar-brand {
+      padding-right: 0;
+      display: none;
+    }
+
+    .navbar-nav {
+      flex-direction: column; /* Display the menu items in a column */
+      background-color: white; /* Add a background color */
+      position: absolute;
+      top: 56px; /* Adjust this value as needed to match your layout */
+      left: 0;
+      width: 100%;
+      display: none; /* Initially hide the menu items */
+    }
+  
+    .navbar-toggler.active + .navbar-nav {
+      display: block; /* Show the menu items when the toggle is active */
+    }
+  
+    .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .tools{
+      display: none;
+    }
+    
+  }
   

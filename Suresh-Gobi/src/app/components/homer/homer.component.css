@@ -2,8 +2,11 @@
 /*Home*/
 /*---------------------------------------------------------*/
 p {
-  color: #9288f8;
+  color: #7a04e9;
   font-size: 16px;
+}
+nav ul li.active {
+  color: #ff0000; /* Change the color as needed */
 }
 
 img {
@@ -338,7 +341,7 @@ span svg {
 /*Project*/
 /*---------------------------------------------------------*/
 #projects{
-  height: 100vh;
+  height: 180vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,6 +350,9 @@ span svg {
   align-items: center;
   text-align: center;
 }
+.card{
+  margin-top: 10px;
+}
 .card-img{
   background-image: url('../../../assets/images/layered-steps-haikei.svg');
   background-position: center;
@@ -354,6 +360,11 @@ span svg {
 .card-title-pro{
   color: white;
   text-align: left;
+}
+.organization{
+  color: white;
+  text-align: left;
+
 }
 a{
   text-decoration: none;
