@@ -38,8 +38,16 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
+ // Toggle mobile menu
+ toggleMobileMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (mobileMenu) {
+    mobileMenu.classList.toggle('show');
+  }
+}
 
   ngOnInit() {
     this.highlightActiveSection();
   }
+  
 }

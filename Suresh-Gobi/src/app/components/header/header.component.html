@@ -4,20 +4,22 @@
 >
   <div class="container">
     <a class="navbar-brand mr-5" href="#">SG</a>
+
     <button
-      class="navbar-toggler"
+      class="navbar-toggler mobile-menu-toggle"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      (click)="toggleMobileMenu()"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+    <!-- Mobile Menu Container -->
+
+    <div
+      class="collapse navbar-collapse mobile-menu"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav ml-auto mobile-nav">
         <li
           class="nav-item"
           [ngClass]="{ 'active-link': activeSection === 'home' }"

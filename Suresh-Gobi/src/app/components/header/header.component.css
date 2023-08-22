@@ -1,90 +1,110 @@
 /* styles.scss or styles.css */
-.navbar{
-    padding-top: 30px;
+nav {
+  z-index: 1000;
+}
+.navbar {
+  padding-top: 30px;
+}
+.navbar ul li.active {
+  color: #ff0000; /* Change the color as needed */
+}
+/* Remove default list styles and style list items */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Style links */
+.navbar a {
+  text-decoration: none;
+  color: #322653;
+  font-size: 16px;
+}
+
+/* Add hover effect to links */
+.navbar a:hover {
+  color: #8062d6;
+  cursor: pointer;
+}
+
+/* Center the navigation links */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add padding between the navbar brand and the links */
+.navbar-brand {
+  padding-right: 250px;
+}
+
+/* Style for the active link in the navigation */
+.nav-links li a {
+  color: #000; /* Change the default link color */
+  text-decoration: none;
+}
+
+.nav-links li a.active {
+  color: #007bff; /* Change the color to your desired active link color */
+  font-weight: bold; /* Optionally, you can change the font-weight to make it more noticeable */
+}
+
+@media (max-width: 576px) {
+  /* Add this to your CSS */
+  .mobile-menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
   }
-  .navbar ul li.active {
-    color: #ff0000; /* Change the color as needed */
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #322653;
   }
-  /* Remove default list styles and style list items */
-  .navbar ul {
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.show {
+    display: block;
+    /* Add additional styling as needed */
+  }
+
+  .mobile-nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-  
-  .navbar-brand{
-    font-size: 26px;
-    font-weight: bold;
+
+  .mobile-nav li {
+    text-align: center;
+    padding: 10px 0;
   }
-  
-  .navbar li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  /* Style links */
-  .navbar a {
+
+  .mobile-nav a {
     text-decoration: none;
     color: #322653;
     font-size: 16px;
   }
-  
-  /* Add hover effect to links */
-  .navbar a:hover {
-    color: #8062D6;
-    cursor: pointer;
-  }
-  
-  /* Center the navigation links */
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Add padding between the navbar brand and the links */
-  .navbar-brand {
-    padding-right: 250px;
-  }
-  
-  /* Style for the active link in the navigation */
-  .nav-links li a {
-    color: #000; /* Change the default link color */
-    text-decoration: none;
-  }
-  
-  .nav-links li a.active {
-    color: #007bff; /* Change the color to your desired active link color */
-    font-weight: bold; /* Optionally, you can change the font-weight to make it more noticeable */
-  }
-  
-  @media (max-width: 576px) {
-    .navbar-brand {
-      padding-right: 0;
-      display: none;
-    }
 
-    .navbar-nav {
-      flex-direction: column; /* Display the menu items in a column */
-      background-color: white; /* Add a background color */
-      position: absolute;
-      top: 56px; /* Adjust this value as needed to match your layout */
-      left: 0;
-      width: 100%;
-      display: none; /* Initially hide the menu items */
-    }
-  
-    .navbar-toggler.active + .navbar-nav {
-      display: block; /* Show the menu items when the toggle is active */
-    }
-  
-    .nav-link {
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    .tools{
-      display: none;
-    }
-    
+  .mobile-nav a:hover {
+    color: #8062d6;
   }
-  
+}
