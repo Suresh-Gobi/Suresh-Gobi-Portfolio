@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import projectsData from '../../../assets/projects.json';
+import * as AOS from 'aos';
 declare const $: any;
 
 interface Project {
@@ -86,7 +87,8 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.highlightActiveSection();
+    AOS.init();
   }
 }
