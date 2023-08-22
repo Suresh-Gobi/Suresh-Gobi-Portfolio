@@ -52,3 +52,10 @@ hr{
 .close:hover{
   color: blueviolet;
 }
+
+/*Mobile Responsive*/
+@media (max-width: 767px) {
+  .modal-content{
+    width: 100%;
+  }
+}

@@ -2,30 +2,50 @@
   <!-- Modal header -->
   <div class="modal-header">
     <h5 class="modal-title">Contact Me</h5>
-    <span  class="close" aria-label="Close" (click)="closeModal.emit()">
+    <span class="close" aria-label="Close" (click)="closeModal.emit()">
       <span aria-hidden="true">&times;</span>
     </span>
-  </div><hr/>
-  
+  </div>
+  <hr />
 
   <!-- Modal body -->
   <div class="modal-body">
     <form>
       <div class="form-group">
         <label for="inputName">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="Enter your name"
+        />
       </div>
       <div class="form-group">
         <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Enter your email"
+        />
       </div>
       <div class="form-group">
         <label for="inputSubject">Subject</label>
-        <input type="text" class="form-control" id="inputSubject" placeholder="Enter the subject">
+        <input
+          type="text"
+          class="form-control"
+          id="inputSubject"
+          placeholder="Enter the subject"
+        />
       </div>
       <div class="form-group">
         <label for="inputMessage">Message</label>
-        <textarea class="form-control" id="inputMessage" rows="4" placeholder="Enter your message"></textarea>
+        <textarea
+          class="form-control"
+          id="inputMessage"
+          rows="4"
+          placeholder="Enter your message"
+        ></textarea>
       </div>
     </form>
   </div>
