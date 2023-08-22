@@ -1,0 +1,19 @@
+.back-to-top-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100000;
+}
+
+button{
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover{
+    background-color: rgb(181, 0, 188);
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
